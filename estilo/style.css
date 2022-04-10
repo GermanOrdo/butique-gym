@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* fuente */
+html{
+    font-family: 'Fjalla One', sans-serif;
+}
+/* body*/
+.bodyGrid{
+    background-color: rgba(255, 255, 0, 0.504);
+    min-height: 100vh;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 40% auto 40%;
+    grid-template-rows: 200px 50px auto auto 100px;
+    grid-template-areas: 
+    "header header header"
+    "nav    nav     nav"
+    "sectionA sectionA sectionA"
+    "SectionB SectionB SectionB"
+    "footer footer footer";
+}
+/*header*/
+.Header {    
+    grid-area: header;
+    background-color: rgba(96, 15, 96, 0.93);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logotitulo{
+    width: auto;
+    height:100%;
+}
+.titulo1{
+    font-size: 3rem;
+    padding-left: 30%;
+    color: rgba(144, 137, 177, 0.474);    
+}
+/*nav*/
+.divNav {
+    grid-area: nav;    
+}
+nav ul a:hover{
+    font-size: 20px;
+    color: rgb(233, 251, 35);
+}
+.sectionGrid {
+    grid-area: sectionA;
+}
+.ulNav{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(96, 15, 96, 0.93);
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+/* enlaces*/
+a {
+    text-decoration: none;
+    color: white;
+}
+/*articulo principal*/
+.article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+article img{
+    height: auto;
+    width: 30%;
+    border: 2px solid blueviolet;
+    border-radius: 2rem;
+}
+.descrArt{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: center;
+}
+.descrH2{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: rgb(55, 55, 204);
+}
+.textArt{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 3rem ;
+}
+.article img:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(140, 95, 123);
+}
+/* art secundario*/
+.sectionSec {
+    grid-area: SectionB;
+}
+.divindex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.divindex img{
+    width: 35%;
+    height: 80%;
+    border: solid gray 0.5rem;
+    border-radius: 2rem;
+}
+.divindex p {
+    text-align: center;
+    width: 50%;
+    height: 55%;
+    font-size: 1.5rem;
+}
+/* footer*/
+.FooterG{
+    background-color: rgb(112, 48, 103);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: footer;
+    bottom: 0;
+    margin-top: auto;
+}
+.logofoot{
+    width: 9rem;
+    height: 6rem;  
+}
+.divFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.5rem;
+} 
+    /*servicios*/
+.tablaservicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+th,td {
+    border: 5px solid rgb(223, 249, 58);
+    border-radius: 8px;
+    width: 15rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+.divtabla{
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(46, 48, 115);
+} 
+/*nosotros*/
+.imgnos{
+    width: 33%;
+    height: auto;
+    border-radius: 15px;
+    border: solid aqua;
+}
+.imgNos{
+    display: flex;
+    flex-direction: row;
+}
+.divNos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(138, 10, 35);
+} 
+/*espacios*/
+.olEsp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 2rem;
+}
+.listaespacios, .listaespacios2, .listaespacios3, .listaespacios4{
+    border: 5px solid black;
+    border-radius: 7px;
+}
+.listaespacios{
+    background-color: brown;
+    color: white;
+}
+.listaespacios2{
+    background-color: gray;
+    color: black;
+}
+.listaespacios3{
+    background-color: aqua;
+    color: blue;
+}
+.listaespacios4{
+    background-color: red;
+    color: black;
+}
+.divideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgb(35, 0, 68);
+}
+/*contacto*/
+.sect{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formH2{
+    text-align: center;
+}
+
+@media only screen and (max-width:1024px){
+    .bodyGrid{
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: 10% 5% 35% 45% 10%;
+        grid-template-areas: 
+            "header header header"
+            "nav    nav     nav"
+            "sectionA sectionA sectionA"
+            "SectionB SectionB SectionB"
+            "footer footer footer"; 
+        background-color: aqua;
+    }
+    .ulNav{
+        margin-top: 0;
+    }
+    .divindex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 3px dashed rgb(78, 181, 107);
+        border-radius: 5rem;
+        background-color: rgb(98, 181, 237);
+        
+    }
+    .sectionSec .divindex:hover{
+        box-shadow: 1rem 1rem 5rem 1rem black;
+    }
+    .divindex p{
+        font-size: 1.5rem;
+    } 
+    th,td {
+        border: 4px solid rgb(223, 249, 58);
+        border-radius: 5px;
+        width: 5rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    table tr{
+        background-color: rgb(237, 94, 94);
+    }
+    .divtabla{
+        margin-top: 1rem;
+    }
+    .divMap{
+        padding-left: 5%;
+    }
+    .sect{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .bodyGrid {
+        grid-template-columns:150px 3fr 3fr;
+        grid-template-rows: 10% 30% 40% 20%;
+        gap: 10px;
+        grid-template-areas: 
+        "header header header"
+        "nav sectionA sectionA"
+        "SectionB SectionB SectionB"
+        "footer footer footer";
+        background-color: rgb(209, 134, 215);
+    }
+    .ulNav{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        background-color: white;
+        list-style-type: none;  
+        background-color: rgb(102, 102, 176);
+        color: black;
+        border: 1px ridge blueviolet;
+        border-radius: 0.5rem;
+        font-size: xx-large;      
+    }
+    .divNav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    nav ul a:hover{
+        font-size: 30px;
+        color: rgb(117, 81, 150);
+    }
+    .divindex p{
+        font-size: small;
+    }
+    .titulo1{
+        font-size: 2rem;
+        color: crimson;
+        font-style: italic;
+        }
+    .Header{
+        background-color: rgb(102, 102, 176);
+    }
+    .divtabla{
+        margin-top: 3rem;
+    }
+    .sect{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .contact{
+        display: flex;
+        flex-flow: column nowrap;
+        
+    }   
+    th,td {
+        border: 2px solid rgb(223, 249, 58);
+        border-radius: 4px;
+        width: 3rem;
+        height: 1rem;
+        font-size: 1rem;
+        font-style: italic;
+    }
+    
+} 
+@media (min-width:240px) and (max-width:420px) {
+    .bodyGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 15% 30% 20% 25%;
+        grid-template-areas:
+            "header"
+            "nav"
+            "sectionA"
+            "SectionB"
+            "footer";
+    }
+    .divNav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Header { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .titulo1{
+        font-size: 2rem;
+        padding-left: 0;
+        color: coral;    
+    }
+    .divNav{
+        display: flex;
+        flex-direction:column;
+        align-items: stretch;
+    }
+    .ulNav{
+        background-color: coral;
+    }
+    .divtabla{
+        margin:0;
+    }
+    .divtabla h3, p{
+        font-size: large;
+    }
+}
