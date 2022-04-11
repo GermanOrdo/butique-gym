@@ -8,7 +8,7 @@ html{
 }
 /* body*/
 .bodyGrid{
-    background-color: rgba(255, 255, 0, 0.504);
+    background-image:linear-gradient(to bottom, rgb(189, 41, 189), rgb(88, 88, 246));
     min-height: 100vh;
     display: grid;
     gap: 1px;
@@ -24,7 +24,7 @@ html{
 /*header*/
 .Header {    
     grid-area: header;
-    background-color: rgba(96, 15, 96, 0.93);
+    background-color: rgba(249, 116, 202, 0.738);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,13 +37,15 @@ html{
 .titulo1{
     font-size: 3rem;
     padding-left: 30%;
-    color: rgba(144, 137, 177, 0.474);    
+    color: rgb(158, 235, 250);    
 }
 /*nav*/
 .divNav {
     grid-area: nav;    
 }
 nav ul a:hover{
+    transform: translateX(5px);
+    transition: all 1s;
     font-size: 20px;
     color: rgb(233, 251, 35);
 }
@@ -75,6 +77,10 @@ article img{
     border: 2px solid blueviolet;
     border-radius: 2rem;
 }
+.imgTrans:hover{
+    transform: translateY(-10px);
+    translate: all 3s;
+}
 .descrArt{
     display: flex;
     flex-flow: column nowrap;
@@ -103,13 +109,17 @@ article img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+}
+.imggym:hover{
+    transform: scale(1.2);
+    transition: all 4s;
 }
 .divindex img{
     width: 35%;
     height: 80%;
     border: solid gray 0.5rem;
-    border-radius: 2rem;
+    border-radius: 1rem;    
 }
 .divindex p {
     text-align: center;
@@ -119,7 +129,7 @@ article img{
 }
 /* footer*/
 .FooterG{
-    background-color: rgb(112, 48, 103);
+    background-color:rgba(249, 116, 202, 0.738);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -188,6 +198,28 @@ th,td {
 .listaespacios, .listaespacios2, .listaespacios3, .listaespacios4{
     border: 5px solid black;
     border-radius: 7px;
+}
+.olEsp li:hover{
+    animation: botones-esp 3s;
+}
+@keyframes botones-esp {
+    25% {border-radius: 5px;
+        border: 3px solid yellow;
+        font-size: large;
+        background-color: rgb(178, 187, 0);
+    }
+    50% {border-radius: 2px;
+        border: 1px solid red;
+        font-size: larger;
+    }
+    75% {border-radius: 4px;
+        border: 5px solid green;
+        font-size: xx-large;
+    }
+    90% {border-radius: 15px;
+        border: 7px solid violet;
+        font-size: x-large;
+    }
 }
 .listaespacios{
     background-color: brown;
