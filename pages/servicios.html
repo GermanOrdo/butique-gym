@@ -5,29 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../estilo/style.css">
 </head>
-<body class="bodyGrid">
-    <header class="Header">
-        <a class="logotitulo" href="../index.html"><img class="logotitulo" src="../img/LOGO2.png" alt="logo"></a>
-        <h1 class="titulo1">Tu Boutique Gym</h1>
-    </header>
-    <div class="divNav">
-        <nav>
-            <ul class="ulNav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="espacios.html">Espacios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+<body class="conteiner-fluid">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <img src="../img/LOGO2.png" alt="logo" class="img-thumbnail">
+                <h1 class="fs-1"><strong>BoutiqueGym</strong></h1>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="espacios.html" class="nav-link">Espacios</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
             </ul>
-        </nav>
+        </header>
     </div>
-    <section class="sectionGrid">
-        <table class="tablaservicios">
+    <section class="container">
+        <table class="table table-dark table-hover">
             <tr>
                 <th>Servicio</th>
                 <th>Edad</th>
@@ -60,20 +65,37 @@
             </tr>
         </table>
     </section>
-    <section class="sectionSec">
-        <div class="divtabla">
-            <h3>Descripcion de la tabla</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ducimus veritatis illum nisi similique nam natus voluptatum molestiae. Odit non accusantium iure odio rem, maxime facere, repellendus animi, doloremque earum cum a porro illo reprehenderit. Iste et adipisci fuga eos inventore. Id eaque numquam aliquam dolores earum nulla laudantium eos.
+    <section class="container">
+        <div class="text-center">
+            <h3 class="fs-2">Descripcion de la tabla</h3>
+            <p class="fs-5 fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quas inventore praesentium! Eos impedit dolorum doloremque reiciendis, ducimus excepturi expedita. Quasi, ad reprehenderit tenetur, repellendus quae quia eveniet animi consequuntur fuga qui ipsum nihil. Ullam, praesentium temporibus, libero, repellat consequatur error est fuga deleniti officia nulla doloremque esse itaque rem! Provident voluptatum explicabo consequatur repellendus rem optio labore quae ab animi odit consequuntur, cumque eligendi, deserunt, itaque aliquam ullam amet aut quod tenetur quibusdam similique corporis laboriosam iure! Pariatur officia nobis magnam nemo porro temporibus fuga, aut asperiores alias laudantium exercitationem! Odio officia aliquid, ipsum, aut, exercitationem consequuntur ducimus assumenda at commodi quam porro optio. Quisquam impedit natus dolore ratione consequuntur eos, consequatur voluptas quae enim expedita error alias est illum voluptate commodi repellat cum! Ipsum officiis, et, omnis quo nisi id, earum aliquid quae libero quibusdam architecto sed repellendus nostrum nulla quidem unde? Error iusto enim sint exercitationem placeat sapiente voluptatibus autem? Eligendi magni excepturi harum labore, molestiae quo sed, dolorem delectus unde nulla tempore, soluta ab assumenda ratione repellendus accusantium. Iusto provident fugit, voluptas voluptatem quis amet harum eligendi at temporibus eaque molestiae libero cumque itaque laboriosam doloremque accusantium quasi dicta ad mollitia, nulla labore corrupti? Quos, enim.
             </p>
         </div>
     </section>
-    <footer class="FooterG">
-        <img class="logofoot" src="../img/LOGO.png" alt="logo">
-        <div class="divFooter">
-            <h3><a href="contacto.html">Contacto</a></h3>
-            <a href="index.html">ir al inicio</a>
-            <h3>Redes sociales</h3>
-        </div>
-    </footer>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="text-dark">© 2021 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://www.twitter.com">
+                    <img src="../img/Nueva carpeta/tw.png" width="24"><svg class="bi" width="24" height="24">
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"><img src="../img/Nueva carpeta/inst.png" width="24"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"><img src="../img/Nueva carpeta/fb.png" width="24"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html>

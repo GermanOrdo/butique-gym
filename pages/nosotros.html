@@ -1,54 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>BoutiqueGym</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../estilo/style.css">
 </head>
-<body class="bodyGrid">
-    <header class="Header">
-        <a class="logotitulo" href="../index.html"><img class="logotitulo" src="../img/LOGO2.png" alt="logo header"></a>
-        <h2 class="titulo1">Tu Boutique Gym</h2>
-    </header>
-    <div class="divNav">
-        <nav>
-            <ul class="ulNav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="espacios.html">Espacios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
 
+<body class="conteiner-fluid">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <img src="../img/LOGO2.png" alt="logo" class="img-thumbnail">
+                <h1 class="fs-1"><strong>BoutiqueGym</strong></h1>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="./servicios.html" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="./espacios.html" class="nav-link">Espacios</a></li>
+                <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
             </ul>
-        </nav>
-    </div>
-    <section class="sectionGrid">
-        <div class="divNos">
-            <h3>Sobre Nosotros</h3>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias iusto fuga perspiciatis quisquam voluptas assumenda omnis natus deserunt, nihil eligendi nulla animi temporibus molestias illo, laborum nemo qui maiores.</h4>
-            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis provident explicabo eius quam eum, sit magnam. Vitae voluptates omnis dolore maiores exercitationem optio possimus non deserunt. Sint ducimus eligendi temporibus?</h5>
-        </div>
-        <div class="imgNos">    
-            <img class="imgnos" src="../img/biofit+boutique+gym+design+ecoo+green+natural.jpg" alt="Nosotros">
-            <img class="imgnos" src="../img/gymwoman.jpg" alt="mujergym">
-            <img class="imgnos" src="../img/gymman.jpg" alt="hombregym">
-        </div>
-        <div class="divNos">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci, cumque laboriosam consequatur debitis vero nulla id repellat laudantium! Velit, doloribus quos cupiditate quae reiciendis fugit facere, odit suscipit modi quisquam obcaecati! Nisi earum aut quod quasi porro repellat sint laborum voluptas ad, ex cumque ea iste aspernatur repudiandae saepe deserunt exercitationem. Reiciendis molestias sed, voluptatibus quam ab quas omnis cum architecto magnam consequuntur consequatur facilis provident ex perferendis ratione dolor optio totam amet error odit labore qui ipsum praesentium? Id excepturi eligendi, quo asperiores iusto nemo facere dolore dolorem unde mollitia similique consequuntur doloremque voluptatem aspernatur commodi odio corporis sunt cum nesciunt. Expedita tempora eligendi adipisci asperiores consequatur ratione explicabo, pariatur reiciendis enim esse eos, deleniti facilis laborum inventore quisquam quam nesciunt quibusdam dolorum praesentium quos qui? Recusandae, corporis odio, laudantium placeat soluta facilis nulla illo numquam alias debitis iusto eos molestias. Ab obcaecati ipsam maxime quam labore illum!</p>
-        </div>
-    </section>
+        </header>
+        <section>
+            <div class="text-center">
+                <h3 class="h1 text-dark">Sobre Nosotros</h3>
+                <h4 class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias iusto
+                    fuga perspiciatis quisquam voluptas assumenda omnis natus deserunt, nihil eligendi nulla animi
+                    temporibus molestias illo, laborum nemo qui maiores.</h4>
+                <h5 class="fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis provident
+                    explicabo eius quam eum, sit magnam. Vitae voluptates omnis dolore maiores exercitationem optio
+                    possimus non deserunt. Sint ducimus eligendi temporibus?</h5>
+            </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../img/recepcion.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/gymwoman.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/gymman.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="divNos">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci, cumque
+                    laboriosam consequatur debitis vero nulla id repellat laudantium! Velit, doloribus quos
+                    cupiditate quae reiciendis fugit facere, odit suscipit modi quisquam obcaecati! Nisi earum
+                    aut quod quasi porro repellat sint laborum voluptas ad, ex cumque ea iste aspernatur
+                    repudiandae saepe deserunt exercitationem. Reiciendis molestias sed, voluptatibus quam ab
+                    quas omnis cum architecto magnam consequuntur consequatur facilis provident ex perferendis
+                    ratione dolor optio totam amet error odit labore qui ipsum praesentium? Id excepturi
+                    eligendi, quo asperiores iusto nemo facere dolore dolorem unde mollitia similique
+                    consequuntur doloremque voluptatem aspernatur commodi odio corporis sunt cum nesciunt.
+                    Expedita tempora eligendi adipisci asperiores consequatur ratione explicabo, pariatur
+                    reiciendis enim esse eos, deleniti facilis laborum inventore quisquam quam nesciunt
+                    quibusdam dolorum praesentium quos qui? Recusandae, corporis odio, laudantium placeat soluta
+                    facilis nulla illo numquam alias debitis iusto eos molestias. Ab obcaecati ipsam maxime quam
+                    labore illum!</p>
+            </div>
+        </section>
+        
+        <script src="../js/bootstrap.js"></script>
 </body>
-<footer class="FooterG">
-    <img class="logofoot" src="../img/LOGO.png" alt="logo">
-    <div class="divFooter">
-        <h3><a href="contacto.html">Contacto</a></h3>
-        <a href="index.html">ir al inicio</a>
-        <h3>Redes sociales</h3>
-    </div>
-</footer>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="text-dark">© 2021 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.twitter.com">
+                    <img src="../img/Nueva carpeta/tw.png" width="24"><svg class="bi" width="24" height="24">
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"><img
+                        src="../img/Nueva carpeta/inst.png" width="24"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"><img
+                        src="../img/Nueva carpeta/fb.png" width="24"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </footer>
+</div>
+
 </html>
