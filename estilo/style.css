@@ -7,21 +7,14 @@ html{
     font-family: 'Fjalla One', sans-serif;
 }
 /* body*/
-.conteiner-fluid{
+.bodyC{
     background-image:linear-gradient(rgb(189, 41, 189), rgb(88, 88, 246));
-    max-height: 100vh;
-}
-/*header*/
-/* .conteiner{    
-    background-color: rgba(249, 116, 202, 0.738);
-} */
-
-.fs-1{
-    color: aqua;
-    padding-left: 60%;
 }
 .img-thumbnail{
     width: 10%;
     height: auto;
 }
-/*footer*/
+.tableServ:hover{
+    transform: translateY(-30px);
+    transition: all 3s;
+}

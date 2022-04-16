@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>BoutiqueGym</title>
     <meta charset="UTF-8">
@@ -11,64 +12,200 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../estilo/style.css">
 </head>
-<body class="conteiner-fluid">
+
+<body class="container-fluid bodyC">
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="../index.html"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <img src="../img/LOGO2.png" alt="logo" class="img-thumbnail">
-                <h1 class="fs-1"><strong>BoutiqueGym</strong></h1>
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
-                <li class="nav-item"><a href="espacios.html" class="nav-link">Espacios</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LOGO2.png" alt="" width="60" height="60" class="d-inline-block align-text-center">
+                    <strong class="text-info fs-3">BoutiqueGym</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="espacios.html">Espacios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </div>
-    <section class="container">
-        <table class="table table-dark table-hover">
-            <tr>
-                <th>Servicio</th>
-                <th>Edad</th>
-                <th>Precio</th>
-                <th>Red Social</th>
-            </tr>
-            <tr>
-                <td>Terra</td>
-                <td>30/99</td>
-                <td>150</td>
-                <td>Facebook</td>
-            </tr>
-            <tr>
-                <td>Aqua</td>
-                <td>18/99</td>
-                <td>250</td>
-                <td>Instagram</td>
-            </tr>
-            <tr>
-                <td>Air</td>
-                <td>25/99</td>
-                <td>290</td>
-                <td>Twiter</td>
-            </tr>
-            <tr>
-                <td>Ignis</td>
-                <td>18/65</td>
-                <td>300</td>
-                <td>Linkedin</td>
-            </tr>
-        </table>
-    </section>
+    <hr>
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm bg-info tableServ">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Basic plan</h4>
+                        <img src="../img/salon1.jpg" class="card-img-top" alt="sala de ejercicios">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$150<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>1 clase semanal</li>
+                            <li>1 bebida incluida</li>
+                            <li>Personal support</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-light">Sign up for free</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm bg-info tableServ">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Pro</h4>
+                        <img src="../img/descarga.jpg" class="card-img-top" alt="gimnasio">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$250<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>2 clases semanales</li>
+                            <li>1 bebida a eleccion</li>
+                            <li>Spa session</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-light">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm bg-info tableServ">
+                    <div class="card-header py-3 bg-info shadow-sm">
+                        <h4 class="my-0 fw-normal">Premium</h4>
+                        <img src="../img/massage1.jpg" class="card-img-top" alt="masajes">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$350<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>3 clases semanales</li>
+                            <li>1 bebida a eleccion</li>
+                            <li>Spa a disposicion</li>
+                            <li>Expertos a disposicion</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-dark">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="display-6 text-center mb-4">Compare plans</h2>
+        <div class="table-responsive">
+            <table class="table table-dark table-striped text-center">
+                <thead>
+                    <tr>
+                        <th style="width: 34%;"></th>
+                        <th style="width: 22%;">Basic</th>
+                        <th style="width: 22%;">Pro</th>
+                        <th style="width: 22%;">Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start">Gimnasios</th>
+                        <td><svg class="bi" width="24" height="24">
+                                <use class="text-light"></use>
+                            </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Gimnasios Pro</th>
+                        <td></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start">Clases personalizadas</th>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Spa</th>
+                        <td></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Bar</th>
+                        <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Butique</th>
+                        <td></td>
+                        <td></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
     <section class="container">
         <div class="text-center">
             <h3 class="fs-2">Descripcion de la tabla</h3>
-            <p class="fs-5 fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quas inventore praesentium! Eos impedit dolorum doloremque reiciendis, ducimus excepturi expedita. Quasi, ad reprehenderit tenetur, repellendus quae quia eveniet animi consequuntur fuga qui ipsum nihil. Ullam, praesentium temporibus, libero, repellat consequatur error est fuga deleniti officia nulla doloremque esse itaque rem! Provident voluptatum explicabo consequatur repellendus rem optio labore quae ab animi odit consequuntur, cumque eligendi, deserunt, itaque aliquam ullam amet aut quod tenetur quibusdam similique corporis laboriosam iure! Pariatur officia nobis magnam nemo porro temporibus fuga, aut asperiores alias laudantium exercitationem! Odio officia aliquid, ipsum, aut, exercitationem consequuntur ducimus assumenda at commodi quam porro optio. Quisquam impedit natus dolore ratione consequuntur eos, consequatur voluptas quae enim expedita error alias est illum voluptate commodi repellat cum! Ipsum officiis, et, omnis quo nisi id, earum aliquid quae libero quibusdam architecto sed repellendus nostrum nulla quidem unde? Error iusto enim sint exercitationem placeat sapiente voluptatibus autem? Eligendi magni excepturi harum labore, molestiae quo sed, dolorem delectus unde nulla tempore, soluta ab assumenda ratione repellendus accusantium. Iusto provident fugit, voluptas voluptatem quis amet harum eligendi at temporibus eaque molestiae libero cumque itaque laboriosam doloremque accusantium quasi dicta ad mollitia, nulla labore corrupti? Quos, enim.
+            <p class="fs-5 fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quas inventore
+                praesentium! Eos impedit dolorum doloremque reiciendis, ducimus excepturi expedita. Quasi, ad
+                reprehenderit tenetur, repellendus quae quia eveniet animi consequuntur fuga qui ipsum nihil. Ullam,
+                praesentium temporibus, libero, repellat consequatur error est fuga deleniti officia nulla doloremque
+                esse itaque rem! Provident voluptatum explicabo consequatur repellendus rem optio labore quae ab animi
+                odit consequuntur, cumque eligendi, deserunt, itaque aliquam ullam amet aut quod tenetur quibusdam
+                similique corporis laboriosam iure! Pariatur officia nobis magnam nemo porro temporibus fuga, aut
+                asperiores alias laudantium exercitationem! Odio officia aliquid, ipsum, aut, exercitationem
+                consequuntur ducimus assumenda at commodi quam porro optio. Quisquam impedit natus dolore ratione
+                consequuntur eos, consequatur voluptas quae enim expedita error alias est illum voluptate commodi
+                repellat cum! Ipsum officiis, et, omnis quo nisi id, earum aliquid quae libero quibusdam architecto sed
+                repellendus nostrum nulla quidem unde? Error iusto enim sint exercitationem placeat sapiente
+                voluptatibus autem? Eligendi magni excepturi harum labore, molestiae quo sed, dolorem delectus unde
+                nulla tempore, soluta ab assumenda ratione repellendus accusantium. Iusto provident fugit, voluptas
+                voluptatem quis amet harum eligendi at temporibus eaque molestiae libero cumque itaque laboriosam
+                doloremque accusantium quasi dicta ad mollitia, nulla labore corrupti? Quos, enim.
             </p>
         </div>
     </section>
@@ -82,15 +219,16 @@
                 </a>
                 <span class="text-dark">© 2021 Company, Inc</span>
             </div>
-
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><a class="text-muted" href="https://www.twitter.com">
-                    <img src="../img/Nueva carpeta/tw.png" width="24"><svg class="bi" width="24" height="24">
+                        <img src="../img/Nueva carpeta/tw.png" width="24"><svg class="bi" width="24" height="24">
                         </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"><img src="../img/Nueva carpeta/inst.png" width="24"><svg class="bi" width="24" height="24">
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"><img
+                            src="../img/Nueva carpeta/inst.png" width="24"><svg class="bi" width="24" height="24">
                             <use xlink:href="#instagram"></use>
                         </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"><img src="../img/Nueva carpeta/fb.png" width="24"><svg class="bi" width="24" height="24">
+                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"><img
+                            src="../img/Nueva carpeta/fb.png" width="24"><svg class="bi" width="24" height="24">
                             <use xlink:href="#facebook"></use>
                         </svg></a></li>
             </ul>
@@ -98,4 +236,5 @@
     </div>
     <script src="../js/bootstrap.js"></script>
 </body>
+
 </html>
