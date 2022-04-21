@@ -8,7 +8,7 @@ html{
 }
 /* body*/
 .bodyC{
-    background-image:linear-gradient(rgb(189, 41, 189), rgb(88, 88, 246));
+    background-image:linear-gradient(rgb(255, 62, 233), rgb(124, 244, 255));
 }
 .img-thumbnail{
     width: 10%;
@@ -17,4 +17,35 @@ html{
 .tableServ:hover{
     transform: translateY(-30px);
     transition: all 3s;
+}
+.navTran div ul li:hover{
+    background-color: rgba(0, 204, 255, 0.647);
+    border: 1px double;
+    border-radius: 1rem;
+    font-weight: bolder;
+}
+.botonEsp:hover{
+    animation: botones 5s;
+}
+@keyframes botones {
+    0%{
+        background-color: rgb(253, 253, 253);
+        color: red;
+        font-size: 0.5rem;
+        font-style:unset ;
+    }
+    30%{
+        font-size: 0.7rem;
+    }
+    50%{
+        color: gold;
+        background-color: chocolate;
+        font-size: 1rem;
+        font-style: italic;
+    }
+    85%{
+        color: rgb(133, 133, 133);
+        font-style: normal;
+        font-weight: bolder;
+    }
 }

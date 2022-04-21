@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -15,10 +16,11 @@
 
 <body class="container-fluid bodyC">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark navTran">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/LOGO2.png" alt="" width="60" height="60" class="d-inline-block align-text-center">
+                    <img src="../img/LOGO2.png" alt="logo head" width="60" height="60"
+                        class="d-inline-block align-text-center">
                     <strong class="text-info fs-3">BoutiqueGym</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,9 +51,8 @@
             </div>
         </nav>
     </div>
-    <hr>
     <main class="container">
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5 p-1">
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm bg-info tableServ">
                     <div class="card-header py-3">
@@ -59,7 +60,8 @@
                         <img src="../img/salon1.jpg" class="card-img-top" alt="sala de ejercicios">
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$150<small class="text-muted fw-light">/mo</small></h1>
+                        <h1 class="card-title pricing-card-title">$150<small class="text-muted fw-light">/mo</small>
+                        </h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>1 clase semanal</li>
                             <li>1 bebida incluida</li>
@@ -73,10 +75,11 @@
                 <div class="card mb-4 rounded-3 shadow-sm bg-info tableServ">
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-normal">Pro</h4>
-                        <img src="../img/massage1.jpg" class="card-img-top" alt="gimnasio">
+                        <img src="../img/gym2.jfif" class="card-img-top" alt="pesas">
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$250<small class="text-muted fw-light">/mo</small></h1>
+                        <h1 class="card-title pricing-card-title">$250<small class="text-muted fw-light">/mo</small>
+                        </h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>2 clases semanales</li>
                             <li>1 bebida a eleccion</li>
@@ -90,10 +93,11 @@
                 <div class="card mb-4 rounded-3 shadow-sm bg-info tableServ">
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-normal">Premium</h4>
-                        <img src="../img/massage1.jpg" class="card-img-top" alt="masajes">
+                        <img src="../img/gym3.jfif" class="card-img-top" alt="salon de maquinas">
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$350<small class="text-muted fw-light">/mo</small></h1>
+                        <h1 class="card-title pricing-card-title">$350<small class="text-muted fw-light">/mo</small>
+                        </h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>3 clases semanales</li>
                             <li>1 bebida a eleccion</li>
@@ -165,8 +169,8 @@
                     <tr>
                         <th scope="row" class="text-start">Bar</th>
                         <td><svg class="bi" width="24" height="24">
-                            <use xlink:href="#check"></use>
-                        </svg>X</td>
+                                <use xlink:href="#check"></use>
+                            </svg>X</td>
                         <td><svg class="bi" width="24" height="24">
                                 <use xlink:href="#check"></use>
                             </svg>X</td>
@@ -189,7 +193,7 @@
     <section class="container">
         <div class="text-center">
             <h3 class="fs-2">Descripcion de la tabla</h3>
-            <p class="fs-5 fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quas inventore
+            <p class="fs-5 fst-italic" data-aos="fade-up-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quas inventore
                 praesentium! Eos impedit dolorum doloremque reiciendis, ducimus excepturi expedita. Quasi, ad
                 reprehenderit tenetur, repellendus quae quia eveniet animi consequuntur fuga qui ipsum nihil. Ullam,
                 praesentium temporibus, libero, repellat consequatur error est fuga deleniti officia nulla doloremque
@@ -211,12 +215,10 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <span class="text-dark">© 2021 Company, Inc</span>
+                <a href="../index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"><svg class="bi"
+                        width="30" height="24"></svg><img src="../img/LOGO2.png" alt="logo foot" width="60" height="60"
+                        class="d-inline-block align-text-center"></a>
+                <span class="text-dark">© 2022 Company, Inc</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><a class="text-muted" href="https://www.twitter.com">
@@ -224,16 +226,18 @@
                         </svg></a></li>
                 <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"><img
                             src="../img/Nueva carpeta/inst.png" width="24"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram"></use>
                         </svg></a></li>
                 <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"><img
                             src="../img/Nueva carpeta/fb.png" width="24"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook"></use>
                         </svg></a></li>
             </ul>
         </footer>
     </div>
     <script src="../js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
