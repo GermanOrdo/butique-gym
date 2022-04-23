@@ -8,44 +8,70 @@ html{
 }
 /* body*/
 .bodyC{
-    background-image:linear-gradient(rgb(255, 62, 233), rgb(124, 244, 255));
-}
-.img-thumbnail{
-    width: 10%;
-    height: auto;
+    min-height: 100vh;
 }
 .tableServ:hover{
     transform: translateY(-30px);
     transition: all 3s;
 }
-.navTran div ul li:hover{
-    background-color: rgba(0, 204, 255, 0.647);
-    border: 1px double;
-    border-radius: 1rem;
-    font-weight: bolder;
-}
+.navTran a:hover{
+    font-size: large;
+    font-weight: bold;
+} 
 .botonEsp:hover{
     animation: botones 5s;
+    transform: translateY(-40px);
+    transition: all 4s;
 }
 @keyframes botones {
     0%{
-        background-color: rgb(253, 253, 253);
-        color: red;
-        font-size: 0.5rem;
-        font-style:unset ;
+        border-radius: 4rem;
+        background-color: yellow;
+        
     }
     30%{
-        font-size: 0.7rem;
+        border-radius: 7rem;
     }
     50%{
-        color: gold;
-        background-color: chocolate;
-        font-size: 1rem;
-        font-style: italic;
+        background-color: rgb(237, 172, 20);
+        border-radius: 9rem;
     }
     85%{
-        color: rgb(133, 133, 133);
-        font-style: normal;
-        font-weight: bolder;
+        border-radius: 5rem;
+        background-color: gray;
     }
+}
+.carruselNos{
+    width: 100%;
+    height: 40rem;
+    
+}
+/*espacios*/
+.circle{
+    border-radius: 2rem;
+    height: 15rem;
+    width: 30rem;
+    margin: 60px auto;
+    background-color: rgb(221, 183, 32);
+}
+.ignis{
+    grid-area: ignis;
+}
+.terra{
+    grid-area: terra;
+}
+.air{
+    grid-area: air;
+}
+.aqua{
+    grid-area: agua;
+}
+
+.sectEsp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "ignis terra"
+    "air agua";
 }
