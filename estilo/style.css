@@ -49,10 +49,9 @@ html{
 /*espacios*/
 .circle{
     border-radius: 2rem;
-    height: 100%;
-    width: 100%;
-    margin: 5rem auto;
+    margin: 4rem auto;
     background-color: rgb(221, 183, 32);
+    height: 25vh;
 }
 .encabezado, .piePag {
     border-radius: 1.5rem;
