@@ -20,7 +20,7 @@ html{
 } 
 .botonEsp:hover{
     animation: botones 5s;
-    transform: translateY(-40px);
+    transform: translateY(-30px);
     transition: all 4s;
 }
 @keyframes botones {
@@ -51,7 +51,7 @@ html{
     border-radius: 2rem;
     height: 100%;
     width: 100%;
-    margin: 6rem auto;
+    margin: 5rem auto;
     background-color: rgb(221, 183, 32);
 }
 .encabezado, .piePag {
