@@ -54,24 +54,3 @@ html{
     margin: 60px auto;
     background-color: rgb(221, 183, 32);
 }
-.ignis{
-    grid-area: ignis;
-}
-.terra{
-    grid-area: terra;
-}
-.air{
-    grid-area: air;
-}
-.aqua{
-    grid-area: agua;
-}
-
-.sectEsp{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "ignis terra"
-    "air agua";
-}
