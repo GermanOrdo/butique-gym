@@ -1,62 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
+h1 {
+  font-family: Acme sans-serif;
+  font-weight: bolder;
 }
-/* fuente */
-html{
-    font-family: 'Fjalla One', sans-serif;
+h1 h2, h1 h3.h4, h1 h5 {
+  font-family: Fjalla One sans-serif;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* body*/
-.bodyC{
-    min-height: 100vh;
+.bodyC {
+  min-height: 100vh;
 }
-.tableServ:hover{
-    transform: translateY(-30px);
-    transition: all 3s;
+.bodyC .navTran a {
+  font-size: medium;
+  font-weight: normal;
 }
-.navTran a:hover{
-    font-size: large;
-    font-weight: bold;
-} 
-.botonEsp:hover{
-    animation: botones 5s;
-    transform: translateY(-30px);
-    transition: all 4s;
+.bodyC .navTran a:hover {
+  font-size: large;
+  font-weight: bold;
 }
-@keyframes botones {
-    0%{
-        border-radius: 4rem;
-        background-color: yellow;
-        
-    }
-    30%{
-        border-radius: 7rem;
-    }
-    50%{
-        background-color: rgb(237, 172, 20);
-        border-radius: 9rem;
-    }
-    85%{
-        border-radius: 5rem;
-        background-color: gray;
-    }
+.bodyC .encabezado {
+  border-radius: 1.5rem;
+  background-color: grey;
 }
-.imgNos{
-    width: 100%;
-    height: auto;
-    
+.bodyC .piePag {
+  border-radius: 1.5rem;
+  background-color: grey;
 }
+
+/*servicio*/
+.tableServ:hover {
+  transform: translateY(-30px);
+  transition: all 3s;
+}
+
 /*espacios*/
-.circle{
-    border-radius: 2rem;
-    margin: 4rem auto;
-    background-color: rgb(221, 183, 32);
-    height: 25vh;
+.botonEsp:hover {
+  animation: botones 5s;
+  transform: translateY(-30px);
+  transition: all 4s;
 }
-.encabezado, .piePag {
-    border-radius: 1.5rem;
+
+.circle {
+  border-radius: 2rem;
+  margin: 4rem auto;
+  background-color: #ffc107;
+  height: 25vh;
+}
+
+@keyframes botones {
+  0% {
+    border-radius: 4rem;
+    background-color: yellow;
+  }
+  30% {
+    border-radius: 7rem;
+  }
+  50% {
+    background-color: rgb(237, 172, 20);
+    border-radius: 9rem;
+  }
+  85% {
+    border-radius: 5rem;
     background-color: grey;
+  }
 }
-.piePag a{
-    text-decoration: none;
+/*nosotros*/
+.imgNos {
+  width: 100%;
+  height: auto;
 }
+
+/*# sourceMappingURL=style.css.map */

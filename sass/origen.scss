@@ -1,0 +1,68 @@
+@import "./tipografia";
+@import "./colores";
+@import "./reseteo";
+
+
+/* body*/
+.bodyC{
+    min-height: 100vh;
+    .navTran a{
+        font-size: medium;
+        font-weight: normal;
+        &:hover{
+            font-size: large;
+            font-weight: bold;
+            }
+    } 
+    .encabezado{
+        border-radius: 1.5rem;
+        background-color:$color2;
+    }
+    .piePag {
+        border-radius: 1.5rem;
+        background-color:$color2;
+        }
+}
+/*servicio*/
+.tableServ:hover{
+    transform: translateY(-30px);
+    transition: all 3s;
+}
+/*espacios*/
+.botonEsp:hover{
+    animation: botones 5s;
+    transform: translateY(-30px);
+    transition: all 4s;
+}
+.circle{
+    border-radius: 2rem;
+    margin: 4rem auto;
+    background-color:$color1;
+    height: 25vh;
+}
+@keyframes botones {
+    0%{
+        border-radius: 4rem;
+        background-color: yellow;
+        
+    }
+    30%{
+        border-radius: 7rem;
+    }
+    50%{
+        background-color: rgb(237, 172, 20);
+        border-radius: 9rem;
+    }
+    85%{
+        border-radius: 5rem;
+        background-color: $color2;
+    }
+}
+/*nosotros*/
+.imgNos{
+    width: 100%;
+    height: auto;
+    
+}
+
+
