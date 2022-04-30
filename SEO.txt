@@ -1,0 +1,44 @@
+Index.
+title: ZenGym | Inicio
+meta keywords :"healthy lifestyle, cuerpo sano, gymnasio, wod, athletic, explotion"
+metadescription: "Encontra el gimnasio que se adapte a tus necesidades. Consulta planes de membresia. veni a conocer todos nuestros servicios con un dia de pase gratis. Mejora tu estilo de vida. Cuerpo sano, mente sana."
+
+Servicios.
+title: ZenGym | Servicios
+meta keywords:"Planes diferenciados, compare planes, precios baratos, clases ilimitadas, spa, yoga"
+meta description: "Vos armas tu plan. La primer clase es gratis, con una bebida a eleccion en el bar. Encontra descuentos invitando a tus amigos."
+
+Nosotros.
+title:ZenGym | Nosotros
+meta keywords:"Conocenos, zen, salud, bienestar, ocio, entreno"
+meta description:"4 gimnasios, sala spa, 1 gabinete de nutricion y 1 bar en cada gimnasio haran de tu entreno un momento unico y especial. No sos uno mas, ya sos parte."
+
+Espacios.
+title:ZenGym | Espacios
+meta keywords:"Ignis, Terra, Aqua, Air,gimnasio deluxe, gimnasio personalizado"
+meta description:"4 gimnasios para que elijas tu mejor opcion. 4 espacios diferentes, 1 misma cultura. Ignis:power wod , Terra:strong, Aqua:move your body, Air:inhala y exhala"
+
+Contacto.
+title:ZenGym | Contacto
+meta keywords: "contactanos, subscribite, ubicacion, mapa, distancia, encontranos"
+meta description:"encontranos en el centro de la ciudad. subscribite para que lleguen nuestras newsletters con promociones y desafios. Contactanos para mas informacion"
+
+Espacio-Terra.
+title:ZenGym | Terra
+meta keywords:"biceps grandes, ejercicios de triceps, prensa, pesas, musculacion"
+meta description:"Tonifica tu cuerpo y aumenta tu masa muscular con especialistas en el area y rutinas personalizadas"
+
+Espacio-Air.
+title:ZenGym | Air
+meta keywords:"yoga, pilates, meditacion, relajacion, masajes"
+meta description:"Combinacion entre cuerpo, salud y mente."
+
+Espacio-Aqua.
+title:ZenGym | Aqua
+meta keyword:"zumba, trx, minitramp, rpm, Aqua"
+meta description:"Ya no es solo gimnasia si no divertirse al ritmo de la mejor musica."
+
+Espacio-Ignis.
+title:ZenGym | Ignis
+meta keyword: "Fuego, resistencia, crossfit, al limite, entrenar"
+meta description:"desafia tus limites, alcanza tu maximo rendimiento con el espacio Ignis a tu disposicion."
