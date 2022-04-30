@@ -15,7 +15,9 @@ a {
   text-decoration: none;
 }
 
-/* body*/
+/*****************
+estructura
+***************/
 .bodyC {
   min-height: 100vh;
 }
@@ -29,54 +31,75 @@ a {
 }
 .bodyC .encabezado {
   border-radius: 1.5rem;
-  background-color: grey;
+  background-color: rgb(58, 58, 58);
 }
 .bodyC .piePag {
   border-radius: 1.5rem;
-  background-color: grey;
+  background-color: rgb(58, 58, 58);
 }
 
-/*servicio*/
-.tableServ:hover {
-  transform: translateY(-30px);
-  transition: all 3s;
-}
-
-/*espacios*/
-.botonEsp:hover {
-  animation: botones 5s;
-  transform: translateY(-30px);
-  transition: all 4s;
-}
-
-.circle {
+/**************
+espacios
+**********/
+.circle, .circle-air, .circle-aqua, .circle-terra, .circle-ignis {
   border-radius: 2rem;
   margin: 4rem auto;
   background-color: #ffc107;
   height: 25vh;
 }
+.circle:hover, .circle-air:hover, .circle-aqua:hover, .circle-terra:hover, .circle-ignis:hover {
+  animation: botones 5s;
+  transform: translateY(-30px);
+  transition: all 4s;
+}
 
 @keyframes botones {
   0% {
     border-radius: 4rem;
-    background-color: yellow;
+    background-color: #ffc107;
   }
   30% {
     border-radius: 7rem;
+    background-color: yellow;
   }
   50% {
-    background-color: rgb(237, 172, 20);
+    background-color: grey;
     border-radius: 9rem;
   }
   85% {
     border-radius: 5rem;
-    background-color: grey;
+    background-color: #ffc107;
   }
 }
 /*nosotros*/
 .imgNos {
-  width: 100%;
+  width: 90%;
   height: auto;
+}
+
+/*home*/
+.imgHome {
+  width: 70%;
+  height: auto;
+  transition: all 2s ease-in-out;
+}
+
+.imgHome:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*servicio*/
+.tableServ:hover {
+  transform: translateY(-30px);
+  transition: all 3s ease-in-out;
+}
+
+.btn-social:hover {
+  border: 2px;
+  border-radius: 1rem;
+  background-color: rgb(58, 58, 58);
+  transform: scale(2);
 }
 
 /*# sourceMappingURL=style.css.map */

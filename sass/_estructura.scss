@@ -1,0 +1,22 @@
+/*****************
+estructura
+***************/
+.bodyC{
+    min-height: 100vh;
+    .navTran a{
+        font-size: medium;
+        font-weight: normal;
+        &:hover{
+            font-size: large;
+            font-weight: bold;
+            }
+    } 
+    .encabezado{
+        border-radius: 1.5rem;
+        background-color: $color4;
+    }
+    .piePag {
+        border-radius: 1.5rem;
+        background-color: $color4;
+        }
+}

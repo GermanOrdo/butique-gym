@@ -1,0 +1,14 @@
+$parametros: (
+    borde: 2px,
+    radius: 1rem,
+    colors: $color4,
+    transfor: scale(2)
+);
+
+.btn-social:hover{
+    border: map-get($parametros,borde);
+    border-radius: map-get($parametros,radius);
+    background-color: map-get($parametros,colors );
+    transform: map-get($parametros,transfor);
+    
+}

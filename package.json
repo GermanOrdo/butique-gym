@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GermanOrdo/butique-gym/issues"
   },
-  "homepage": "https://github.com/GermanOrdo/butique-gym#readme"
+  "homepage": "https://github.com/GermanOrdo/butique-gym#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1"
+  }
 }

@@ -1,0 +1,20 @@
+@mixin tamano ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+/*nosotros*/
+.imgNos {
+    @include tamano (90%, auto)
+}
+/*home*/
+.imgHome {
+    @include tamano (70%, auto);
+    transition: all 2s ease-in-out;
+}
+
+.imgHome:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}

@@ -1,0 +1,55 @@
+/**************
+espacios
+**********/
+
+.circle {
+    border-radius: 2rem;
+    margin: 4rem auto;
+    background-color: $color1;
+    height: 25vh;
+
+    &:hover {
+        animation: botones 5s;
+        transform: translateY(-30px);
+        transition: all 4s;
+    }
+}
+
+@keyframes botones {
+    0% {
+        border-radius: 4rem;
+        background-color: $color1;
+    }
+
+    30% {
+        border-radius: 7rem;
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: $color2;
+        border-radius: 9rem;
+    }
+
+    85% {
+        border-radius: 5rem;
+        background-color: $color1;
+    }
+}
+
+
+.circle-ignis {
+    @extend .circle;
+}
+
+.circle-terra {
+    @extend .circle;
+}
+
+.circle-aqua {
+    @extend .circle;
+}
+
+.circle-air {
+    @extend .circle;
+}
