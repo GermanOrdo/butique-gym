@@ -20,3 +20,12 @@ estructura
         background-color: $color4;
         }
 }
+.divWhat{
+    display: flex;
+    justify-content:flex-end;
+    a{
+        position: sticky;
+        border-radius: 3rem;
+        
+    }
+}

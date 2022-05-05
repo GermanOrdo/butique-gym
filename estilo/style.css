@@ -1,4 +1,3 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 h1 {
   font-family: Acme sans-serif;
   font-weight: bolder;
@@ -37,6 +36,15 @@ estructura
 .bodyC .piePag {
   border-radius: 1.5rem;
   background-color: rgb(58, 58, 58);
+}
+
+.divWhat {
+  display: flex;
+  justify-content: flex-end;
+}
+.divWhat a {
+  position: sticky;
+  border-radius: 3rem;
 }
 
 /**************
