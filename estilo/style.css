@@ -43,7 +43,8 @@ estructura
   justify-content: flex-end;
 }
 .divWhat a {
-  position: sticky;
+  position: fixed;
+  bottom: 120px;
   border-radius: 3rem;
 }
 
