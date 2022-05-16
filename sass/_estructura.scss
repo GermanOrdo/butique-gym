@@ -15,11 +15,13 @@ estructura
     }
 
     .encabezado {
+        border: 1px solid $color1;
         border-radius: 1.5rem;
         background-color: $color4;
     }
 
     .piePag {
+        border: 1px solid $color1;
         border-radius: 1.5rem;
         background-color: $color4;
     }

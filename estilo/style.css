@@ -30,10 +30,12 @@ estructura
   font-weight: bold;
 }
 .bodyC .encabezado {
+  border: 1px solid #ffc107;
   border-radius: 1.5rem;
   background-color: rgb(58, 58, 58);
 }
 .bodyC .piePag {
+  border: 1px solid #ffc107;
   border-radius: 1.5rem;
   background-color: rgb(58, 58, 58);
 }
@@ -83,8 +85,8 @@ espacios
 }
 /*nosotros*/
 .imgNos {
-  width: 90%;
-  height: auto;
+  width: 85%;
+  height: 90vh;
 }
 
 /*home*/
@@ -97,6 +99,11 @@ espacios
 .imgHome:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.imgServ {
+  width: 70%;
+  height: 30vh;
 }
 
 /*servicio*/

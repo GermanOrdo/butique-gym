@@ -5,7 +5,7 @@
 
 /*nosotros*/
 .imgNos {
-    @include tamano (90%, auto)
+    @include tamano (85%, 90vh)
 }
 /*home*/
 .imgHome {
@@ -17,4 +17,7 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 
+}
+.imgServ {
+    @include tamano (70%, 30vh)
 }
